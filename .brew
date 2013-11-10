@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+##
+## Brew and brew-cask install
+## AKA Getting applications out of the box
+##
+
+# download brew, our main installer
+ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+
+# run to see problems we may encounter
+brew doctor
+
+# install coreutils, gnu utilites not found on standard osX
+brew install coreutils --default-names
+
+# Tap into cask's repo
+# Install tmux (virtual terms in currnt), wget (download from terminal),
+# and hub (makes a lot of sense if you work with github)
+# grc is to make use of colour in the terminal (for now only ping)
+brew tap phinze/homebrew-cask
+brew install tmux wget brew-cask hub grc
+
+# Install the main suite of apps we like to use
+# Also, I'm trying to keep the 80 line char limit
+brew cask install iterm2 sublime-text textexpander evernote dropbox google-chrome
+brew cask install skype vagrant rstudio quicksilver vlc onepassword the-unarchiver
+brew cask install divvy bartender spotify omnifocus omnigraffle transmission
+brew cask install skitch kindle little-snitch
+# Virtualbox is commented because our devel works with 4.12
+# uncomment to get it working with the latest version 
+# (but remember to comment the .extra.sh script part of VirtualBox!!)
+#brew cask install virtualbox
+ 
+# Clean brew's cache
+brew cleanup

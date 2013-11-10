@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+
+##
+## Install the rest of applications used and comment those that you don't need
+## eg. VirtualBox if you go for the latest version
+##
+
+# Enthought Python Distribution: Having a full working suite of scientific
+# Python applications working out of the box with pylab already working
+# good also to have a separate version running
+# Get the EPD Canopy and copy the file to /Applications
+wget -O edp.dmg https://www.enthought.com/downloads/canopy/osx-64/free/
+hdid edp.dmg && cp -r /Volumes/Enthought/Canopy.app /Applications/Canopy.app
+# Set the Canopy CLI environment
+/Applications/Canopy.app/Contents/MacOS/Canopy_cli setup $HOME/canopy
+# Unmount the disk image and clean
+hdiutil detach /Volumes/Enthought && rm edp.dmg
+
+# Bodymedia activity tracker, it costs over $150 so I want it running no matter what
+# Get the bodymedia zipfile
+wget -O bm.zip http://www.bodymedia.com/macsync && tar xvf bm.zip
+# Install the application
+sudo installer -pkg "Install BodyMedia | Sync.pkg" -target /
+# Clean
+rm -rf "Install BodyMedia | Sync.pkg" __MACOSX bm.zip
+
+
+##
+## This part is only if working with Portzar's devel environment
+## Comment also if unnecessary. 
+##
+
+# Script for installing portzar's virtualbox version
+# Get the dmg
+wget http://download.virtualbox.org/virtualbox/4.2.18/VirtualBox-4.2.18-88780-OSX.dmg
+# mount and install the packet
+hdid VirtualBox-4.2.18-88780-OSX.dmg
+sudo installer -pkg /Volumes/VirtualBox/VirtualBox.pkg target /
+# Copy uninstalling script and clean
+cp /Volumes/VirtualBox/VirtualBox_Uninstall.tool $HOME/.dotfiles/Uninstall_scripts
+hdiutil detach /Volumes/VirtualBox && rm VirtualBox-4.2.18-88780-OSX.dmg
+
+# Clone into Portzar's secret githup repo
+git clone https://github.com/PortZar/portzar.git $HOME/Documents
+# Check into the devel branch
+cd $HOME/Documents/portzar && git chekout devel
+
+# If you have the EDP, install pip and googlecl to download the horrible
+# bluebox. This is a wip, by the way…
+#if [[ condition ]]; then
+	#statements
+#fi
