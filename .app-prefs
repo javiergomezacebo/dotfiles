@@ -3,9 +3,9 @@
 # Must wait for Dropbox to stop syncing
 
 # Link the .zshrc to home to get the oh-my-zsh env working
-ln -s $HOME/Dropbox/.dotfiles/zshrc $HOME/.zshrc
+ln -s $HOME/Dropbox/Dotfiles/zshrc $HOME/.zshrc
 # Link the official agnoster theme to the one we're using
-ln -s $HOME/.dotfiles/3712874/agnoster.zsh-theme $HOME/.oh-my-zsh/themes/agnoster-1.zsh-theme
+cp $HOME/.dotfiles/3712874/agnoster.zsh-theme $HOME/.oh-my-zsh/themes/agnoster-1.zsh-theme
 # Set zsh as your default shell
 chsh -s /bin/zsh
 
@@ -13,18 +13,18 @@ chsh -s /bin/zsh
 # ~/Library Folder
 rm -rf $HOME/Library/Application\ Support/Sublime\ Text\ 2
 mkdir $HOME/Library/Application\ Support/Sublime\ Text\ 2
-ln -s $HOME/Dropbox/.dotfiles/Sublime\ Text\ 2/Installed\ Packages $HOME/Library/Application\ Support/Sublime\ Text\ 2/Installed\ Packages
-ln -s $HOME/Dropbox/.dotfiles/Sublime\ Text\ 2/Packages $HOME/Library/Application\ Support/Sublime\ Text\ 2/Packages
-ln -s $HOME/Dropbox/.dotfiles/Sublime\ Text\ 2/Pristine\ Packages $HOME/Library/Application\ Support/Sublime\ Text\ 2/Pristine\ Packages
-ln -s $HOME/Dropbox/.dotfiles/Sublime\ Text\ 2/Settings $HOME/Library/Application\ Support/Sublime\ Text\ 2/Settings
+ln -s $HOME/Dropbox/Dotfiles/Sublime\ Text\ 2/Installed\ Packages $HOME/Library/Application\ Support/Sublime\ Text\ 2/Installed\ Packages
+ln -s $HOME/Dropbox/Dotfiles/Sublime\ Text\ 2/Packages $HOME/Library/Application\ Support/Sublime\ Text\ 2/Packages
+ln -s $HOME/Dropbox/Dotfiles/Sublime\ Text\ 2/Pristine\ Packages $HOME/Library/Application\ Support/Sublime\ Text\ 2/Pristine\ Packages
+ln -s $HOME/Dropbox/Dotfiles/Sublime\ Text\ 2/Settings $HOME/Library/Application\ Support/Sublime\ Text\ 2/Settings
 # Get the subl command working
 ln -s /opt/homebrew-cask/Caskroom/sublime-text/2.0.2/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl $HOME/bin/subl
 
 # Link the divvy shortcuts to get them running
 rm $HOME/Library/Preferences/com.mizage.divvy.plist $HOME/Library/Preferences/com.mizage.direct.Divvy.plist
-ln -s $HOME/Dropbox/.dotfiles/divvy/com.mizage.divvy.plist $HOME/Library/Preferences/com.mizage.divvy.plist
-ln -s $HOME/Dropbox/.dotfiles/divvy/com.mizage.direct.Divvy.plist $HOME/Library/Preferences/com.mizage.direct.Divvy.plist
+ln -s $HOME/Dropbox/Dotfiles/divvy/com.mizage.divvy.plist $HOME/Library/Preferences/com.mizage.divvy.plist
+ln -s $HOME/Dropbox/Dotfiles/divvy/com.mizage.direct.Divvy.plist $HOME/Library/Preferences/com.mizage.direct.Divvy.plist
 
 # Link the iTerm2 preferences to get them running
 rm $HOME/Library/Preferences/com.googlecode.iterm2.plist
-ln -s $HOME/Dropbox/.dotfiles/com.googlecode.iterm2.plist $HOME/Library/Preferences/com.googlecode.iterm2.plist
+ln -s $HOME/Dropbox/Dotfiles/com.googlecode.iterm2.plist $HOME/Library/Preferences/com.googlecode.iterm2.plist

@@ -44,7 +44,7 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Install Xcode and the Command Line Tools
-xcode-select --install
+# xcode-select --install
 
 # Make the directories we're used to use
 mkdir $HOME/.dotfiles/term $HOME/.dotfiles/term/colours
