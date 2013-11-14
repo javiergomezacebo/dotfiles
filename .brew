@@ -11,52 +11,47 @@ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 # run to see problems we may encounter
 brew doctor
 
-# Tap into cask's repo
-# Tap into sckence repo
-# install coreutils, gnu utilites not found on standard osX
-# Install tmux (virtual terms in currnt), wget (download from terminal),
-# and hub (makes a lot of sense if you work with github)
-# grc is to make use of colour in the terminal (for now only ping)
-brew tap phinze/homebrew-cask
-brew tap homebrew/science
-brew install coreutils --default-names
-brew install tmux
-brew install wget
-brew install brew-cask
-brew install hub
-brew install grc
-brew install gfortran
-brew install r
-brew install node
-brew install htop
+# Tap into repos and install brew suit apps
+brew tap phinze/homebrew-cask # For cask (see next section)
+brew tap homebrew/science # For r mainly
+brew install coreutils --default-names # Installs GNU's UNIX tools
+brew install tmux # Terminal emulator
+brew install wget # Downloading program
+brew install brew-cask # Cask, for downloading binary apps
+brew install hub # Git for github
+brew install grc # Generic Colorizer
+brew install gfortran # Fortran compiler (for r)
+brew install r # R statistics package
+brew install node # Node, the javascript server
+brew install htop # Like top, but better
 
 # Install the main suite of apps we like to use
-brew cask install textexpander
-brew cask install evernote
-brew cask install dropbox
-brew cask install sublime-text
-brew cask install dropbox
-brew cask install vlc
-brew cask install google-chrome
-brew cask install skype
-brew cask install vagrant
-brew cask install rstudio
-brew cask install quicksilver
-brew cask install vlc
-brew cask install the-unarchiver
-brew cask install onepassword
-brew cask install omnigraffle
-brew cask install transmission
-brew cask install divvy
-brew cask install bartender
-brew cask install spotify
-brew cask install omnifocus
-brew cask install skitch
-brew cask install kindle
-brew cask install iterm2
-brew cask install little-snitch
-brew cask install google-drive
-brew cask install virtualbox
+brew cask install atext # Text expansion
+brew cask install evernote # Your virtual memmory
+brew cask install dropbox # Best cloud syncing service
+brew cask install sublime-text # Indispensable semi IDE
+brew cask install vlc # Best media viewer
+brew cask install google-chrome # THE browser
+brew cask install google-hangouts # Hangouts plugin
+brew cask install skype # The other voIP service
+brew cask install vagrant # For automatizing the creation of virtual machines
+brew cask install rstudio # The GUI for R
+brew cask install quicksilver # The super launcher
+brew cask install the-unarchiver # Opening rar in mac
+brew cask install onepassword # Password archiver
+brew cask install omnigraffle # Wireframes the easy way
+brew cask install transmission # .torrent downloader
+brew cask install bartender # Hides apps in menu bar
+brew cask install spotify # What iTunes should have been
+brew cask install omnifocus # GTD in a mac
+brew cask install skitch # Companion to evernote, screen capture
+brew cask install kindle # Read Kindle books
+brew cask install iterm2 # What terminal.app should have been
+brew cask install little-snitch # Connections sniffer
+brew cask install google-drive # Gdrive app
+brew cask install virtualbox # OS virtualizer, also virtual machines
+brew cask install appzapper # Uninstall apps
+brew cask install amethyst # Like Xmonad for mac
 
 # Clean brew's cache
 brew cleanup
