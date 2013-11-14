@@ -24,6 +24,7 @@ brew install gfortran # Fortran compiler (for r)
 brew install r # R statistics package
 brew install node # Node, the javascript server
 brew install htop # Like top, but better
+brew install z # cd completion
 
 # Install the main suite of apps we like to use
 brew cask install atext # Text expansion
@@ -58,3 +59,6 @@ brew cleanup
 
 # Make sure R doesn't display weird messages on startup
 defaults write org.R-project.R force.LANG en_US.UTF-8
+
+# Give write permissions to z so we can use it
+chown +x  sh `brew --prefix`/etc/profile.d/z.sh
