@@ -25,6 +25,12 @@ brew install r # R statistics package
 brew install node # Node, the javascript server
 brew install htop # Like top, but better
 brew install z # cd completion
+# Octave and dependencies
+brew install https://raw.github.com/dexterurbane/homebrew-science/patch_octave_unordered_map/octave.rb --env=std
+brew install gnuplot
+brew install ghostscript
+brew install epstool
+
 
 # Install the main suite of apps we like to use
 brew cask install atext # Text expansion
