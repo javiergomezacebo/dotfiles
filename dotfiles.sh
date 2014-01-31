@@ -22,10 +22,8 @@
 ###############################################################################
 
 ##
-## Alpha version. 2013-11-10
+## Alpha version 1: 2014-01-31
 ## Still need to understand how to get:
-##   - The cask for virtualbox-tz version running
-##   - Downloading a shared file from google drive
 ##   - Starting all applications on boot
 ##   - Getting the accessibility applications running from scratch
 ##
@@ -58,9 +56,12 @@ sh $HOME/.dotfiles/.brew
 # Get the real agnoster theme to work and the Source Code Pro font for sublime
 # Get the font needed for the agnoster theme
 cd $HOME/.dotfiles/term && git clone https://gist.github.com/3712874.git
-cd $HOME/.dotfiles/term && git clone https://github.com/adobe/source-code-pro.git
 cd $HOME/.dotfiles/term && wget https://gist.github.com/qrush/1595572/raw/417a3fa36e35ca91d6d23ac961071094c26e5fad/Menlo-Powerline.otf
-open $HOME/.dotfiles/term/Menlo-Powerline.otf
+# Install the fonts and erase the folders
+cp $HOME/.dotfiles/term/Menlo-Powerline.otf $HOME/Library/Fonts/Menlo-Powerline.otf
+mkdir $HOME/.dotfiles/scp && cd $HOME/.dotfiles/scp
+wget http://sourceforge.net/projects/sourcecodepro.adobe/files/SourceCodePro_FontsOnly-1.017.zip/download && tar xjvf download
+cp $HOME/.dotfiles/scp/SourceCodePro_FontsOnly-1.017/OTF/*.otf $HOME/Library/Fonts/ && cd $HOME && rm -rf $HOME/.dotfiles/scp
 # Get the Solarized dark dircolors for ls to work with dircolors
 cd $HOME/.dotfiles/term/colours && hub clone seebi/dircolors-solarized
 # Get the Solarized dark iterm theme (the one in github not working)
