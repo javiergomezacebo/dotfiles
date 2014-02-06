@@ -1,0 +1,32 @@
+# Brew depends and the main python
+brew install python
+brew install freetype
+brew install qt
+brew install pyqt
+brew install zmq
+brew install swig
+
+# Installing pip
+curl -O http://python-distribute.org/distribute_setup.py
+python distribute_setup.py
+easy_install pip
+rm distribute_setup.py
+
+# Creating virtualenv environment
+pip install virutualenv
+pip install virutualenvwrapper
+mkdir $HOME/.virtualenv
+
+# Installing Numpy
+pip install numpy
+
+# Installing SciPy
+pip install scipy
+
+# Installing matplotlib
+pip install git+https://github.com/matplotlib/matplotlib.git#egg=matplotlib-dev
+
+# Installing IPython
+pip install ipython
+pip install pyzmq
+pip install pygments
