@@ -30,6 +30,7 @@ brew install https://raw.github.com/dexterurbane/homebrew-science/patch_octave_u
 brew install gnuplot
 brew install ghostscript
 brew install epstool
+brew install mackup # backup the config files for apps in mac
 
 
 # Install the main suite of apps we like to use
@@ -59,6 +60,7 @@ brew cask install google-drive # Gdrive app
 brew cask install virtualbox # OS virtualizer, also virtual machines
 brew cask install appzapper # Uninstall apps
 brew cask install amethyst # Like Xmonad for mac
+brew cask install light-table # The future of IDEs
 
 # Clean brew's cache
 brew cleanup
