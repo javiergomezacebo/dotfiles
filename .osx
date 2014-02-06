@@ -654,6 +654,22 @@ defaults write com.twitter.twitter-mac ShowFullNames -bool true
 # Hide the app in the background if it’s not the front-most window
 defaults write com.twitter.twitter-mac HideInBackground -bool true
 
+
+###############################################################################
+# Destroy the incredibly annoying gamed service                               #
+###############################################################################
+
+# Start by removing the service from launchctl
+launchctl remove gamed
+
+# Eliminate the plist from the world of our mac
+sudo mkdir /System/Library/LaunchAgentsDisabled
+sudo mv /System/Library/LaunchAgents/com.apple.gamed.plist /System/Library/LaunchAgentsDisabled/
+
+# Rename the service so that it doesn't get called again
+sudo mv /System/Library/Frameworks/GameKit.framework/Versions/Current/Resources/gamed /System/Library/Frameworks/GameKit.framework/Versions/Current/Resources/gamed.inactive
+
+
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
