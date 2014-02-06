@@ -81,6 +81,9 @@ open /opt/homebrew-cask/Caskroom/dropbox/latest/Dropbox.app/
 # Run .osx conf files to get mac working to our liking
 sh $HOME/.dotfiles/.osx
 
+# Run the .python install script
+sh $HOME/.dotfiles/.python
+
 # Run the .extra.sh script to get the extra apps working
 # comment if unnecessary
 cd $HOME/.dotfiles/.extra
