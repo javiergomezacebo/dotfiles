@@ -10,28 +10,9 @@ cp $HOME/.dotfiles/3712874/agnoster.zsh-theme $HOME/.oh-my-zsh/themes/agnoster-1
 # Set zsh as your default shell
 chsh -s /bin/zsh
 
-# Installing Mackup, the pref updater from brew
+# Installing Mackup, the Mac preference updater
 brew install mackup
+mackup restore
 
-# Sublime works like an asshole, so we have to link all our settings to the
-# ~/Library Folder
-# Using Mackup, the darndest backup tool. Takes care of Sublime
-# rm -rf $HOME/Library/Application\ Support/Sublime\ Text\ 2
-# mkdir $HOME/Library/Application\ Support/Sublime\ Text\ 2
-# ln -s $HOME/Dropbox/Dotfiles/Sublime\ Text\ 2/Installed\ Packages $HOME/Library/Application\ Support/Sublime\ Text\ 2/Installed\ Packages
-# ln -s $HOME/Dropbox/Dotfiles/Sublime\ Text\ 2/Packages $HOME/Library/Application\ Support/Sublime\ Text\ 2/Packages
-# ln -s $HOME/Dropbox/Dotfiles/Sublime\ Text\ 2/Pristine\ Packages $HOME/Library/Application\ Support/Sublime\ Text\ 2/Pristine\ Packages
-# ln -s $HOME/Dropbox/Dotfiles/Sublime\ Text\ 2/Settings $HOME/Library/Application\ Support/Sublime\ Text\ 2/Settings
-# Get the subl command working
-ln -s /opt/homebrew-cask/Caskroom/sublime-text/2.0.2/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl $HOME/bin/subl
-
-# Link the divvy shortcuts to get them running
-# Again using Mackup
-# rm $HOME/Library/Preferences/com.mizage.divvy.plist $HOME/Library/Preferences/com.mizage.direct.Divvy.plist
-# ln -s $HOME/Dropbox/Dotfiles/divvy/com.mizage.divvy.plist $HOME/Library/Preferences/com.mizage.divvy.plist
-# ln -s $HOME/Dropbox/Dotfiles/divvy/com.mizage.direct.Divvy.plist $HOME/Library/Preferences/com.mizage.direct.Divvy.plist
-
-# Link the iTerm2 preferences to get them running
-# Our friend the mackup does it again
-# rm $HOME/Library/Preferences/com.googlecode.iterm2.plist
-# ln -s $HOME/Dropbox/Dotfiles/com.googlecode.iterm2.plist $HOME/Library/Preferences/com.googlecode.iterm2.plist
+# Link the bin dir to the Dropbox copy
+ln -s $HOME/Dropbox/bin $HOME/bin
