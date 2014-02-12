@@ -32,7 +32,7 @@
 # It was easier to move everything to $HOME than to wonder how on earth to
 # get it working the other ways
 if [[ $PWD != $HOME/.dotfiles ]]; then
-	mv ../.dotfiles $HOME/.dotfiles
+	mv $PWD $HOME/.dotfiles
 fi
 
 
