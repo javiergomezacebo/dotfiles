@@ -1,3 +1,6 @@
+#!/usr/bin/env bash
+# Python environment installation script
+
 # Brew depends and the main python
 brew install python
 brew install freetype
