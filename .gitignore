@@ -5,7 +5,7 @@ oh-my-zsh/
 term/
 
 <<<<<<< HEAD
-/git-flow-completion
+git-flow-completion/
 =======
 git-flow-completion/
 >>>>>>> F-#1
