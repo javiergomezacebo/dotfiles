@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# install the git-flow environment
+brew install git-flow
+
+# Clone the git-flow-repo
+git clone https://github.com/bobthecow/git-flow-completion.git git-flow-completion
