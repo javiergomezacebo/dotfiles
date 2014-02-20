@@ -31,6 +31,7 @@ brew install gnuplot
 brew install ghostscript
 brew install epstool
 brew install mackup # backup the config files for apps in mac
+brew install git-flow # git-flow running in the system
 
 
 # Install the main suite of apps we like to use
