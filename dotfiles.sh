@@ -51,6 +51,9 @@ mkdir $HOME/Documents/Uninstall_scripts $HOME/bin
 # Install all Apps
 sh $HOME/.dotfiles/.brew
 
+# Get oh my zsh! & link it to the $HOME dir
+hub clone robbyrussell/oh-my-zsh $HOME/.dotfiles/oh-my-zsh
+ln -s $HOME/.dotfiles/oh-my-zsh $HOME/.oh-my-zsh
 
 # Get iTerm and Sublime Text to work to our liking:
 # Get the real agnoster theme to work and the Source Code Pro font for sublime
@@ -67,11 +70,8 @@ cd $HOME/.dotfiles/term/colours && hub clone seebi/dircolors-solarized
 # Get the Solarized dark iterm theme (the one in github not working)
 cd $HOME/.dotfiles/term/colours
 wget http://www.iterm2.com/hostedcolors/Solarized%20Dark.itermcolors
-
-# Get oh my zsh! & link it to the $HOME dir
-hub clone robbyrussell/oh-my-zsh $HOME/.dotfiles/oh-my-zsh
-ln -s $HOME/.dotfiles/oh-my-zsh $HOME/.oh-my-zsh
-
+# Install the git-flow completion plugin
+cd $HOME/.dotfiles && git clone https://github.com/bobthecow/git-flow-completion.git
 
 # Configure dropbox and wait for full download (around 16 Gigs as of 2013/11/08)
 # This will be necessary to copy the Sublime Text 2 prefs and other preferences
@@ -82,7 +82,7 @@ open /opt/homebrew-cask/Caskroom/dropbox/latest/Dropbox.app/
 sh $HOME/.dotfiles/.osx
 
 # Run the .python install script
-sh $HOME/.dotfiles/.python
+# sh $HOME/.dotfiles/.python
 
 # Run the .extra.sh script to get the extra apps working
 # comment if unnecessary
