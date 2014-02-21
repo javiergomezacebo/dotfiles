@@ -6,7 +6,7 @@
 # We will be using mackup, so this will not be in use for the time being
 # ln -s $HOME/Dropbox/Dotfiles/zshrc $HOME/.zshrc
 # Link the official agnoster theme to the one we're using
-cp $HOME/.dotfiles/3712874/agnoster.zsh-theme $HOME/.oh-my-zsh/themes/agnoster-1.zsh-theme
+cp $HOME/.dotfiles/term/3712874/agnoster.zsh-theme $HOME/.oh-my-zsh/themes/agnoster-1.zsh-theme
 # Set zsh as your default shell
 chsh -s /bin/zsh
 

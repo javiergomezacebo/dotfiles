@@ -6,7 +6,7 @@
 ##
 
 # download brew, our main installer
-ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
 
 # run to see problems we may encounter
 brew doctor
