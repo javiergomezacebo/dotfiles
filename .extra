@@ -13,12 +13,6 @@ sudo installer -pkg "Install BodyMedia | Sync.pkg" -target /
 # Clean
 rm -rf "Install BodyMedia | Sync.pkg" __MACOSX bm.zip
 
-# Install xQuartz
-cd $HOME && wget http://xquartz.macosforge.org/downloads/SL/XQuartz-2.7.5.dmg
-hdiutil attach XQuartz-2.7.5.dmg && rm XQuartz-2.7.5.dmg
-sudo installer -pkg /Volumes/XQuartz-2.7.5/XQuartz.pkg -target /
-hdiutil detach /Volumes/XQuartz-2.7.5
-
 # Clone into Portzar's secret githup repo
 mkdir $HOME/Portzar && git clone https://github.com/PortZar/portzar.git $HOME/Portzar
 # Check into the devel branch
