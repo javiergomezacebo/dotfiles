@@ -62,6 +62,7 @@ brew cask install virtualbox # OS virtualizer, also virtual machines
 brew cask install appzapper # Uninstall apps
 brew cask install amethyst # Like Xmonad for mac
 brew cask install light-table # The future of IDEs
+brew cask install xquartz
 
 # Clean brew's cache
 brew cleanup
