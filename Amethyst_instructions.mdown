@@ -1,0 +1,45 @@
+
+Keyboard Shortcuts
+------------------
+
+Amethyst uses two modifier combinations.
+
+* `mod1` - `option + shift`
+* `mod2` - `ctrl + option + shift`
+
+And defines the following commands, mostly a mapping to xmonad key combinations.
+
+* `mod1 + space` — cycle to next layout
+* `mod2 + space` - cycle to previous layout
+* `mod1 + l` - change layout to tall
+* `mod1 + d` - change layout to wide
+* `mod1 + -` - change layout to fullscreen
+* `mod1 + z` - change layout to fullscreen
+* `mod1 + c` - focus 1st screen
+* `mod1 + e` - focus 2nd screen
+* `mod1 + r` - focus 3rd screen
+* `mod2 + c` - move focused window to 1st screen
+* `mod2 + e` - move focused window to 2nd screen
+* `mod2 + r` - move focused window to 3rd screen
+* `mod2 + [n]` - move focused window to nth space
+* `mod1 + h` - shrink the main pane
+* `mod1 + s` - expand the main pane
+* `mod1 + v` - increase the number of windows in the main pane
+* `mod1 + w` - decrease the number of windows in the main pane
+* `mod1 + t` - focus the next window counterclockwise
+* `mod1 + n` - focus the next window clockwise
+* `mod2 + t` - move the focused window one space counterclockwise
+* `mod2 + n` - move the focused window one space clockwise
+* `mod1 + return` - swap the focused window with the main window
+* `mod1 + m` - toggle whether or not the focused window is floating
+* `mod1 + l` - display the current layout for each screen
+
+Setting Up Spaces Support
+-------------------------
+
+Spaces are, unfortunately, not supported right out of the box. To enable it you
+must activate Mission Control's keyboard shortcuts for switching to specific
+Desktops, as Mac OS X calls them. This option is in the Keyboard Shortcuts tab
+of the Keyboard preferences pane. The shortcuts will be of the form `ctrl +
+[n]`. Amethyst is only able to send a window to the `n`th space if the shortcut
+`ctrl + n` is enabled.
