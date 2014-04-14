@@ -14,7 +14,7 @@ And defines the following commands, mostly a mapping to xmonad key combinations.
 * `mod1 + l` - change layout to tall
 * `mod1 + d` - change layout to wide
 * `mod1 + -` - change layout to fullscreen
-* `mod1 + z` - change layout to fullscreen
+* `mod1 + z` - change layout to columns
 * `mod1 + c` - focus 1st screen
 * `mod1 + e` - focus 2nd screen
 * `mod1 + r` - focus 3rd screen
