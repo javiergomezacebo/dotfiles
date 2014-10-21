@@ -79,7 +79,7 @@ cd $HOME/.dotfiles && git clone https://github.com/bobthecow/git-flow-completion
 open /opt/homebrew-cask/Caskroom/dropbox/latest/Dropbox.app/
 
 # Run .osx conf files to get mac working to our liking
-sh $HOME/.dotfiles/.osx
+# sh $HOME/.dotfiles/.osx
 
 # Run the .python install script
 # sh $HOME/.dotfiles/.python
@@ -92,4 +92,4 @@ cd $HOME/.dotfiles/.extra
 # Give message to wait until dropbox has stopped syncing
 echo 'Wait until dropbox has stopped syncing and run'
 echo 'sh $HOME/.dotfiles/.app-prefs'
-
+echo 'Also run sh $HOME/.dotfiles/.osx to get osx to an OK liking'

@@ -26,11 +26,11 @@ brew install node # Node, the javascript server
 brew install htop # Like top, but better
 brew install z # cd completion
 # Octave and dependencies
-brew install https://raw.github.com/dexterurbane/homebrew-science/patch_octave_unordered_map/octave.rb --env=std
-brew install gnuplot
-brew install ghostscript
-brew install epstool
-brew install mackup # backup the config files for apps in mac
+# brew install https://raw.github.com/dexterurbane/homebrew-science/patch_octave_unordered_map/octave.rb --env=std
+# brew install gnuplot
+# brew install ghostscript
+# brew install epstool
+# brew install mackup # backup the config files for apps in mac
 brew install git-flow # git-flow running in the system
 
 
@@ -48,20 +48,19 @@ brew cask install rstudio # The GUI for R
 brew cask install quicksilver # The super launcher
 brew cask install the-unarchiver # Opening rar in mac
 brew cask install onepassword # Password archiver
-brew cask install omnigraffle # Wireframes the easy way
+# brew cask install omnigraffle # Wireframes the easy way
 brew cask install transmission # .torrent downloader
 brew cask install bartender # Hides apps in menu bar
 brew cask install spotify # What iTunes should have been
 brew cask install omnifocus # GTD in a mac
 brew cask install skitch # Companion to evernote, screen capture
-brew cask install kindle # Read Kindle books
 brew cask install iterm2 # What terminal.app should have been
 brew cask install little-snitch # Connections sniffer
 brew cask install google-drive # Gdrive app
 brew cask install virtualbox # OS virtualizer, also virtual machines
 brew cask install appzapper # Uninstall apps
 brew cask install amethyst # Like Xmonad for mac
-brew cask install light-table # The future of IDEs
+# brew cask install light-table # The future of IDEs
 brew cask install xquartz # for julia and octave
 brew cask install rescuetime # Track computer usage
 

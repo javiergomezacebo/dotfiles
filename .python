@@ -10,18 +10,18 @@ brew install zmq
 brew install swig
 
 # Creating virtualenv environment
-pip install virtualenv
-pip install virtualenvwrapper
+brew install virtualenv
+brew install virtualenvwrapper
 mkdir $HOME/.virtualenv
 
 # Installing Numpy
-pip install numpy
+brew install numpy
 
 # Installing SciPy
-pip install scipy
+brew install scipy
 
 # Installing matplotlib
-pip install git+https://github.com/matplotlib/matplotlib.git#egg=matplotlib-dev
+brew install matplotlib
 
 # Installing IPython
 pip install ipython

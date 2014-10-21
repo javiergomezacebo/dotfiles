@@ -13,7 +13,3 @@ sudo installer -pkg "Install BodyMedia | Sync.pkg" -target /
 # Clean
 rm -rf "Install BodyMedia | Sync.pkg" __MACOSX bm.zip
 
-# Clone into Portzar's secret githup repo
-mkdir $HOME/Portzar && git clone https://github.com/PortZar/portzar.git $HOME/Portzar
-# Check into the devel branch
-cd $HOME/Portzar && git checkout devel
