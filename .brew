@@ -12,19 +12,20 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew doctor
 
 # Tap into repos and install brew suit apps
-brew tap phinze/homebrew-cask # For cask (see next section)
+# brew tap phinze/homebrew-cask # For cask (see next section)
 brew tap homebrew/science # For r mainly
 brew install coreutils --default-names # Installs GNU's UNIX tools
 brew install tmux # Terminal emulator
 brew install wget # Downloading program
-brew install brew-cask # Cask, for downloading binary apps
+# brew install brew-cask # Cask, for downloading binary apps
 brew install hub # Git for github
 brew install grc # Generic Colorizer
 brew install gfortran # Fortran compiler (for r)
-brew install r # R statistics package
+# brew install r # R statistics package
 brew install node # Node, the javascript server
 brew install htop # Like top, but better
-brew install z # cd completion
+# brew install z # cd completion
+brew install archey
 # Octave and dependencies
 # brew install https://raw.github.com/dexterurbane/homebrew-science/patch_octave_unordered_map/octave.rb --env=std
 # brew install gnuplot
@@ -32,6 +33,7 @@ brew install z # cd completion
 # brew install epstool
 # brew install mackup # backup the config files for apps in mac
 brew install git-flow # git-flow running in the system
+brew install fasd # fasd, command line productivity booster
 
 
 # Install the main suite of apps we like to use
@@ -47,7 +49,7 @@ brew cask install vagrant # For automatizing the creation of virtual machines
 brew cask install rstudio # The GUI for R
 brew cask install quicksilver # The super launcher
 brew cask install the-unarchiver # Opening rar in mac
-brew cask install onepassword # Password archiver
+brew cask install 1password # Password manager
 # brew cask install omnigraffle # Wireframes the easy way
 brew cask install transmission # .torrent downloader
 brew cask install bartender # Hides apps in menu bar
@@ -68,7 +70,7 @@ brew cask install rescuetime # Track computer usage
 brew cleanup
 
 # Make sure R doesn't display weird messages on startup
-defaults write org.R-project.R force.LANG en_US.UTF-8
+# defaults write org.R-project.R force.LANG en_US.UTF-8
 
 # Give write permissions to z so we can use it
-chown +x  sh `brew --prefix`/etc/profile.d/z.sh
+# chown +x  sh `brew --prefix`/etc/profile.d/z.sh

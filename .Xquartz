@@ -1,8 +1,8 @@
 #!/bin/bash
 # Script to get xquartz installed in osx
 set -ex
-wget http://xquartz.macosforge.org/downloads/SL/XQuartz-2.7.7.dmg
-hdiutil attach -mountpoint /Volumes/xquartz XQuartz-2.7.7.dmg
+wget https://dl.bintray.com/xquartz/downloads/XQuartz-2.7.11.dmg
+hdiutil attach -mountpoint /Volumes/xquartz XQuartz-2.7.11.dmg
 sudo installer -pkg /Volumes/xquartz/XQuartz.pkg -target /
 hdiutil detach /Volumes/xquartz
-rm XQuartz-2.7.7.dmg
+rm XQuartz-2.7.11.dmg

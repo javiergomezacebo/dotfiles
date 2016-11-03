@@ -2,16 +2,10 @@
 # Python environment installation script
 
 # Brew depends and the main python
-brew install python
-brew install freetype
-brew install qt
-brew install pyqt
-brew install zmq
-brew install swig
+brew install python python3 freetype qt pyqt zmq swig
 
 # Creating virtualenv environment
-brew install virtualenv
-brew install virtualenvwrapper
+brew install virtualenv virtualenvwrapper
 mkdir $HOME/.virtualenv
 
 # Installing Numpy
@@ -24,6 +18,4 @@ brew install scipy
 brew install matplotlib
 
 # Installing IPython
-pip install ipython
-pip install pyzmq
-pip install pygments
+pip install ipython pyzmq pygments
