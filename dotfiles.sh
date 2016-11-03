@@ -53,7 +53,7 @@ sh $HOME/.dotfiles/.brew
 
 # Get oh my zsh! & link it to the $HOME dir
 hub clone robbyrussell/oh-my-zsh $HOME/.dotfiles/oh-my-zsh
-ln -s $HOME/.dotfiles/oh-my-zsh $HOME/.oh-my-zsh
+# ln -s $HOME/.dotfiles/oh-my-zsh $HOME/.oh-my-zsh
 
 # Get iTerm and Sublime Text to work to our liking:
 # Get the real agnoster theme to work and the Source Code Pro font for sublime
