@@ -12,17 +12,21 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew doctor
 
 # Tap into repos and install brew suit apps
-# brew tap phinze/homebrew-cask # For cask (see next section)
 brew tap homebrew/science # For r mainly
+# Install brew programs from master list
+cat brew.txt | while read program; do
+ brew install $program
+done
+
 brew install coreutils --default-names # Installs GNU's UNIX tools
 brew install tmux # Terminal emulator
 brew install wget # Downloading program
 # brew install brew-cask # Cask, for downloading binary apps
 brew install hub # Git for github
 brew install grc # Generic Colorizer
-brew install gfortran # Fortran compiler (for r)
+# brew install gfortran # Fortran compiler (for r)
 # brew install r # R statistics package
-brew install node # Node, the javascript server
+# brew install node # Node, the javascript server
 brew install htop # Like top, but better
 # brew install z # cd completion
 brew install archey
@@ -32,8 +36,8 @@ brew install archey
 # brew install ghostscript
 # brew install epstool
 # brew install mackup # backup the config files for apps in mac
-brew install git-flow # git-flow running in the system
-brew install fasd # fasd, command line productivity booster
+# brew install git-flow # git-flow running in the system
+# brew install fasd # fasd, command line productivity booster
 
 
 # Install the main suite of apps we like to use
@@ -46,8 +50,8 @@ brew cask install google-chrome # THE browser
 brew cask install google-hangouts # Hangouts plugin
 brew cask install skype # The other voIP service
 brew cask install vagrant # For automatizing the creation of virtual machines
-brew cask install rstudio # The GUI for R
-brew cask install quicksilver # The super launcher
+# brew cask install rstudio # The GUI for R
+# brew cask install quicksilver # The super launcher
 brew cask install the-unarchiver # Opening rar in mac
 brew cask install 1password # Password manager
 # brew cask install omnigraffle # Wireframes the easy way
